@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1680146977 source:d:\problem solving\icpc assiut university community\sheet #1 (data type - conditions)\a. say hello with c++\main.cpp
+	<iostream>
+	<bits/stdc++.h>
+
