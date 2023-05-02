@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1681167363 source:d:\problem solving\al-azhar icpc community\sheet #3\e. lowest number\main.cpp
+	<iostream>
+	<bits/stdc++.h>
+

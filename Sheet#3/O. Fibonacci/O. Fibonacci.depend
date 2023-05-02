@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1681359353 source:d:\problem solving\al-azhar icpc community\sheet #3\o. fibonacci\main.cpp
+	<iostream>
+	<bits/stdc++.h>
+
