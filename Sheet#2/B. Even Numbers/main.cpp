@@ -1,16 +1,37 @@
 #include <iostream>
+#include <bits/stdc++.h>
+#define fast ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+#define ll long long
+#define ye  "YES\n"
+#define no  "NO\n"
+#define all(v) v.begin(), v.end()
+#define pb              push_back
+#define mp              make_pair
+#define pii             pair<int,int>
+#define vi              vector<int>
+#define mii             map<int,int>
+#define pqb             priority_queue<int>
+#define ps(x,y)         fixed<<setprecision(y)<<x
+#define mk(arr,n,type)  type *arr=new type[n];
+#define w(x)            int x; cin>>x; while(x--)
+#define c(x)            ll x; cin>>x;
 using namespace std;
-int main() {
-	long long n;
-	cin >> n;
-	if (n <= 1) {
-		cout << -1;
-		return 0;
-	}
-	for (size_t i = 2; i <= n; i++)
-	{
-		if (i % 2 == 0)
-			cout << i << endl;
-	}
-	return 0;
+
+void test()
+{
+    c(n);
+    if(n<2)
+    {
+        cout<<-1;
+        return;
+    }
+    for(int i=2;i<=n;i+=2)
+        cout<<i<<"\n";
+}
+int main()
+{
+    fast;
+    //cin>>test;
+    test();
+    return 0;
 }
