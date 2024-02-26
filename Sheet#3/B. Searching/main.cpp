@@ -144,22 +144,24 @@ void SumRange()
 }
 */
 
-int test()
+void test()
 {
     c(n);
     ll arr[n];
-    fl(i,n)cin>>arr[i];
+    fl(i, n)cin>>arr[i];
     c(x);
-    int i;
-    fl(i,n)
+    ll flag=1;
+    fl(i, n)
     {
         if(arr[i] == x)
         {
             cout<<i<<endl;
-            return 0;
+            flag=0;
+            break;
         }
     }
-    cout<<-1<<endl;
+    if(flag==1)
+        cout<<-1<<endl;
 }
 int32_t main()
 {
