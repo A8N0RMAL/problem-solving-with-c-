@@ -192,7 +192,7 @@ int test()
         if(a[i]==b[x])
             ++c,++x;
     }
-    cout<<(c==m?"Yes\n":"NO\n");
+    cout<<(c==m?"YES\n":"NO\n");
 }
 int32_t main()
 {
