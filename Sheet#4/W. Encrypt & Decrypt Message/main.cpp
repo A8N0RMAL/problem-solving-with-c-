@@ -1,44 +1,41 @@
 #include <iostream>
 #include <bits/stdc++.h>
-#define fast ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 using namespace std;
-
 int main()
 {
     string Key = "PgEfTYaWGHjDAmxQqFLRpCJBownyUKZXkbvzIdshurMilNSVOtec#@_!=.+-*/";
     string Original = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+
     int q;
     cin>>q;
+
     string s;
     cin>>s;
-    int ss=s.size();
-    int j=0;
-    if(q == 1)
+    int z;
+
+    int size=s.size();
+    if(q==1)
     {
-        for(int i=0; i<ss; i++)
+        for(int i=0;i<size;++i)
         {
-            for( j=0; j<Original.size(); j++)
+            for(z=0; z<Original.size();++z)
             {
-                if(s[i]==Original[j])
-                {
+                if(s[i] == Original[z])
                     break;
-                }
             }
-            cout<<Key[j];
+            cout<<Key[z];
         }
     }
     else
     {
-        for(int i=0; i<ss; i++)
+        for(int i=0;i<size;++i)
         {
-            for( j=0; j<Key.size(); j++)
+            for(z=0; z<Original.size();++z)
             {
-                if(s[i]==Key[j])
-                {
+                if(s[i] == Key[z])
                     break;
-                }
             }
-            cout<<Original[j];
+            cout<<Original[z];
         }
     }
     return 0;
