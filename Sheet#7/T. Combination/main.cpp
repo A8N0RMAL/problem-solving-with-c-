@@ -327,7 +327,10 @@ ll fact(ll n, ll r)
 int test()
 {
     c(n);c(r);
-    cout<<fact(n, r);
+    if(n<r)
+        cout<<0;
+    else
+        cout<<fact(n, r);
 }
 int32_t main()
 {
